@@ -1,30 +1,61 @@
-
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Interactive Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>People List</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	
+  </head>
+	<body>
+  
 
 <div class="container">
-  <h1>My Interactive Page</h1>
+  <h1>Contact Form</h1>
 
-  <p id="message">Welcome to my interactive webpage!</p>
+  <form id="contactForm">
 
-  <button id="changeButton">Change Message</button>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <p id="firstNameError" class="error"></p>
+    </div>
 
-  <h2>Add a Favorite</h2>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+      <p id="lastNameError" class="error"></p>
+    </div>
 
-  <input type="text" id="favoriteInput" placeholder="Type something...">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <p id="emailError" class="error"></p>
+    </div>
 
-  <ul id="favoriteList"></ul>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <p id="phoneError" class="error"></p>
+    </div>
 
-  <button id="addButton">Add to List</button>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <p id="messageError" class="error"></p>
+    </div>
+
+    <button type="submit">Submit</button>
+
+    <p id="successMessage"></p>
+
+  </form>
+
+<div class="api-box">
+  <h2>Random Joke</h2>
+  <p id="fact">Loading a joke...</p>
 </div>
 
-</body> 
-<script src="script.js"></script>
-</html>
 
+   
