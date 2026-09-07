@@ -1,4 +1,4 @@
-```css
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -7,7 +7,7 @@ body {
   padding: 30px;
 }
 
-.container {
+  .container {
   max-width: 600px;
   margin: auto;
   background-color: white;
@@ -15,20 +15,23 @@ body {
   border-radius: 10px;
 }
 
-h1 {
+  h1 {
   text-align: center;
-  color: purple;
+  color: brown;
 }
 
-.form-group {
+  .form-group {
   margin-bottom: 15px;
 }
+
+  
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 
 input,
 textarea {
@@ -39,12 +42,16 @@ textarea {
   box-sizing: border-box;
 }
 
+
+ 
 textarea {
   height: 100px;
 }
 
+
+
 button {
-  background-color: purple;
+  background-color: olive;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -52,9 +59,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+
+
+    button:hover {
   opacity: 0.8;
 }
+
+ 
 
 .error {
   color: red;
@@ -62,15 +73,19 @@ button:hover {
   margin: 5px 0;
 }
 
+ 
+
 #successMessage {
   color: green;
   font-weight: bold;
 }
 
+ 
+
 .api-box {
   margin-top: 30px;
   padding: 15px;
-  background-color: #f0e6ff;
+  background-color: tan;
   border-radius: 5px;
 }
-```
+
