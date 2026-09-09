@@ -71,7 +71,7 @@ const email = document.getElementById("email");
 });
 
 
-// Clear first name error when typing
+            // Clear first name error when typing
     firstName.addEventListener("input", function() {
   document.getElementById("firstNameError").textContent = "";
 });
@@ -95,7 +95,7 @@ phone.addEventListener("input", function() {
 });
 
 
-// Clear message error when typing
+                 // Clear message error when typing
 message.addEventListener("input", function() {
   document.getElementById("messageError").textContent = "";
 });
@@ -107,12 +107,10 @@ message.addEventListener("input", function() {
 
 
 
-    // Check if the API request worked
+       // Check if the API request worked
           if (!response.ok) {
       throw new Error("API request failed");
-    }
-
-    return response.json();
+    } return response.json();
   })
 
   .then(function(data) {
@@ -120,7 +118,10 @@ message.addEventListener("input", function() {
 
 
     // Display the joke on the page
-        document.getElementById("fact").textContent =
+      
+    
+    
+    document.getElementById("fact").textContent =
       data.setup + " " + data.punchline;
   })
 
