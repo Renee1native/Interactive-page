@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,9 +13,11 @@
 
 <body>
 
-  <div class="container">
-
+  <header>
     <h1>Contact Form</h1>
+  </header>
+
+  <main class="container">
 
     <form id="contactForm">
 
@@ -26,32 +27,24 @@
         <p id="firstNameError" class="error"></p>
       </div>
 
-      
-      
       <div class="form-group">
         <label for="lastName">Last Name:</label>
         <input type="text" id="lastName" name="lastName" required>
         <p id="lastNameError" class="error"></p>
       </div>
 
-      
-      
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <p id="emailError" class="error"></p>
       </div>
 
-     
-     
       <div class="form-group">
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" required>
         <p id="phoneError" class="error"></p>
       </div>
 
-      
-      
       <div class="form-group">
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
@@ -64,18 +57,19 @@
 
     </form>
 
-   
-   
-    <div class="api-box">
-      <h2>Random Joke</h2>
+    <section class="api-box" aria-labelledby="joke-heading">
+      <h2 id="joke-heading">Random Joke</h2>
       <p id="fact">Loading a joke...</p>
-    </div>
+    </section>
 
-  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Contact List</p>
+  </footer>
 
 </body>
 </html>
-
 
 
 
